@@ -1,0 +1,72 @@
+/* Header Genel Stili */
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Stili */
+.logo img {
+    height: 40px;
+}
+
+/* Navigasyon Menüsü */
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #323f60;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav ul li a:hover {
+    color: #00C26D;
+}
+
+/* Aksiyon Butonları */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn.login {
+    background-color: transparent;
+    color: #323f60;
+    border: 1px solid #323f60;
+}
+
+.btn.signup {
+    background-color: #00C26D;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

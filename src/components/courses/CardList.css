@@ -1,0 +1,29 @@
+.cardlist-container {
+    width: 1024px;
+    /* Yatayda ortalanacak */
+    margin: 0 auto;
+    /* Sayfa genişliğinde ortalamayı sağlamak için */
+    opacity: 1;
+    /* Görünür olacak */
+}
+
+.cardlist-card-list-inner {
+    gap: 32px;
+    /* İçerikler arasında 32px boşluk */
+    display: flex;
+    flex-direction: column;
+    /* İçerikler dikey sırada olacak */
+    justify-content: flex-start;
+    /* Dikeyde baştan başlayacak */
+    align-items: center;
+
+}
+
+.cardlist-card-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* Yüzde yüz genişlik, başlıkla hizalanması için */
+}

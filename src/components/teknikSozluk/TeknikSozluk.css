@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.teknikSozlukContainer {
+    width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 28px 208px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: #00B666;
+    line-height: 56.16px;
+    margin: 20px;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #1D1D1D;
+    text-align: center;
+    line-height: 42.16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .teknikSozlukContainer {
+        flex-direction: column;
+        /* Elemanları üst üste diz */
+        padding: 20px;
+        /* Daha küçük padding */
+    }
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .title {
+        font-size: 36px;
+        /* Daha küçük başlık boyutu */
+        line-height: 42px;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .teknikSozlukContainer {
+        padding: 16px;
+        /* Daha dar ekranlar için padding */
+        gap: 15px;
+        /* Elemanlar arasındaki boşluğu küçült */
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title {
+        font-size: 28px;
+        /* Daha küçük başlık */
+        line-height: 34px;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .teknikSozlukContainer {
+        padding: 10px;
+        /* Mobil ekranlar için minimal padding */
+    }
+
+    .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

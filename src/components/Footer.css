@@ -1,0 +1,81 @@
+/* Footer Genel Stili */
+.footer {
+    background-color: #323f60;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #d8d8d8;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #00C26D;
+}
+
+/* Sosyal Medya */
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    color: #00C26D;
+}
+
+/* Alt Bilgi */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #50597b;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: #d8d8d8;
+}
