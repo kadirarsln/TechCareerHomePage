@@ -2,21 +2,21 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Testimonials.css";
 
 const CardWithCircle = ({ imageSrc, title, position, description }) => (
-  <div className="card-with-circle">
-    <div className="circle">
+  <div className="testimonial-card-with-circle">
+    <div className="testimonial-circle">
       <img src={imageSrc} alt={title} />
     </div>
-    <div className="card-layout">
-      <div className="card">
+    <div className="testimonial-card-layout">
+      <div className="testimonial-card">
 
 
-        <div className="card-content">
-          <h3 className="text-title">{title}</h3>
-          <span className="text-subtitle">{position}</span>
-          <p className="text-body">{description}</p>
+        <div className="testimonial-card-content">
+          <h3 className="testimonial-text-title">{title}</h3>
+          <span className="testimonial-text-subtitle">{position}</span>
+          <p className="testimonial-text-body">{description}</p>
 
         </div>
-        <div className="icon-quotes">
+        <div className="testimonial-icon-quotes">
           <svg
             width="24"
             height="24"
@@ -64,11 +64,11 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardContainerRef = useRef(null);
 
-  // Otomatik kaydırma işlevi
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 4000); // Her 4 saniyede bir slider'ı kaydır
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
@@ -85,7 +85,7 @@ const Testimonials = () => {
     );
   };
 
-  // Mouse ile kaydırma işlevi
+
   const handleMouseDown = (e) => {
     const startX = e.pageX;
     const scrollLeft = cardContainerRef.current.scrollLeft;
@@ -105,22 +105,22 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="fixed-layout">
-      <div className="frame">
-        <div className="layout">
-          <div className="text-layout">
+    <div className="testimonial-fixed-layout">
+      <div className="testimonial-frame">
+        <div className="testimonial-layout">
+          <div className="testimonial-text-layout">
             <h2>
               Bizi Katılımcılarımızdan<span> Dinle</span>
             </h2>
           </div>
 
           <div
-            className="card-container"
+            className="testimonial-card-container"
             ref={cardContainerRef}
-            onMouseDown={handleMouseDown} // Mouse ile kaydırma başlat
+            onMouseDown={handleMouseDown}
           >
-            {/* Sol ok butonu */}
-            <button className="card-button-left" onClick={handlePrevious}>
+
+            <button className="testimonial-card-button-left" onClick={handlePrevious}>
               <svg
                 width="24"
                 height="24"
@@ -137,10 +137,11 @@ const Testimonials = () => {
               </svg>
             </button>
 
-            {/* Kartlar */}
+
             <CardWithCircle
               imageSrc={testimonials[currentIndex].imageSrc}
               title={testimonials[currentIndex].title}
+              position={testimonials[currentIndex].position}
               description={testimonials[currentIndex].description}
             />
             <CardWithCircle
@@ -148,6 +149,7 @@ const Testimonials = () => {
                 testimonials[(currentIndex + 1) % testimonials.length].imageSrc
               }
               title={testimonials[(currentIndex + 1) % testimonials.length].title}
+              position={testimonials[(currentIndex + 1) % testimonials.length].position}
               description={
                 testimonials[(currentIndex + 1) % testimonials.length]
                   .description
@@ -155,8 +157,8 @@ const Testimonials = () => {
             />
           </div>
 
-          {/* Sağ ok butonu */}
-          <button className="card-button-right" onClick={handleNext}>
+
+          <button className="testimonial-card-button-right" onClick={handleNext}>
             <svg
               width="24"
               height="24"
@@ -174,7 +176,7 @@ const Testimonials = () => {
           </button>
         </div>
         <button
-          className="button-tertiary"
+          className="testimonial-button-tertiary"
           onClick={() => window.open("https://www.techcareer.net/user-stories", "_blank")}
         >
           Tüm Yorumları Gör
@@ -185,4 +187,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-

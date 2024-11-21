@@ -19,7 +19,7 @@ function Home() {
 			</div>
 			<div>
 				<JobList />
-			</div>scd
+			</div>
 			<div>
 				<CardList />
 			</div>

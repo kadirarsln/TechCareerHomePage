@@ -1,8 +1,9 @@
 /* En dıştaki Layout */
-.fixed-layout {
+.testimonial-fixed-layout {
   position: relative;
   /* Konumlandırma */
-  witdh: 100%;
+  width: 1024px;
+  margin: 0px auto;
   height: 390px;
   /* Figma'dan alınan yükseklik */
   padding: 28px 208px;
@@ -30,7 +31,7 @@
   /* İzolasyon, overlay elemanları için */
 }
 
-.fixed-layout::-webkit-scrollbar {
+.testimonial-fixed-layout::-webkit-scrollbar {
   display: none;
   /* WebKit tabanlı tarayıcılar için scrollbar'ı gizler */
 }
@@ -56,7 +57,7 @@
 }
 
 /* Text Layout */
-.text-layout {
+.testimonial-text-layout {
   width: 1024px;
   /* Genişlik */
   height: 42px;
@@ -69,7 +70,7 @@
   gap: 36px;
 }
 
-.text-body {
+.testimonial-text-body {
   width: 286px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -95,7 +96,7 @@
   /* Scrollbar ile metin arasında boşluk bırak */
 }
 
-.text-layout h2 {
+.testimonial-text-layout h2 {
   font-size: 36px;
   font-weight: bold;
   color: #333;
@@ -107,7 +108,7 @@
 }
 
 /* İç Layout */
-.layout {
+.testimonial-layout {
   width: 1024px;
   /* Figma'dan gelen genişlik */
   height: 250px;
@@ -139,7 +140,7 @@
 }
 
 /* Buton için text stili ekleyin */
-.button-tertiary {
+.testimonial-button-tertiary {
   width: 183px;
   height: 48px;
   padding: 12px 24px;
@@ -163,12 +164,12 @@
   transition: background-color 0.3s ease;
 }
 
-.button-tertiary:hover {
+.testimonial-button-tertiary:hover {
   background: #00a85d;
 }
 
 /* İç Frame - Text Layout Container */
-.frame {
+.testimonial-frame {
   width: 1024px;
   /* Figma'dan alınan genişlik */
   height: 334px;
@@ -202,7 +203,7 @@
   /* Esnemeyi devre dışı bırak */
 }
 
-.card-container {
+.testimonial-card-container {
   height: 172px;
   /* Figma'dan alınan yükseklik */
   display: flex;
@@ -237,7 +238,7 @@
   /* Esnemeyi devre dışı bırak */
 }
 
-.card-with-circle {
+.testimonial-card-with-circle {
   display: flex;
   /* Flexbox düzeni */
   flex-direction: row;
@@ -267,7 +268,7 @@
   justify-content: center;
 }
 
-.circle {
+.testimonial-circle {
   width: 140px;
   /* Figma'dan alınan genişlik */
   height: 140px;
@@ -304,7 +305,7 @@
   /* Border ve padding dahil edildi */
 }
 
-.card-layout {
+.testimonial-card-layout {
   width: 354px;
   /* Figma'dan alınan genişlik */
   height: 172px;
@@ -328,7 +329,7 @@
   /* Esnemez */
 }
 
-.card-content {
+.testimonial-card-content {
   flex-direction: column;
   align-items: flex-start;
   /* İçeriği sola hizala */
@@ -347,7 +348,7 @@
   /* Taşmayı engelle */
 }
 
-.icon-container {
+.testimonial-icon-container {
   display: flex;
   /* Icon için flex düzeni */
   align-items: center;
@@ -367,12 +368,12 @@
   /* Yumuşak kaydırma */
 }
 
-.card-container:active {
+.testimonial-card-container:active {
   cursor: grabbing;
   /* Fareyi tutarken "grabbing" işaretçisi */
 }
 
-.circle img {
+.testimonial-circle img {
   width: 100%;
   /* Görsel genişliğini daireye uydur */
   height: 100%;
@@ -381,7 +382,7 @@
   /* Görseli keserek daireye tam oturt */
 }
 
-.card {
+.testimonial-card {
   flex-direction: column;
   /* İçeriği dikey hizala */
   align-items: flex-start;
@@ -408,7 +409,7 @@
   /* Padding ve border'ı width ve height'a dahil et */
 }
 
-.card-layout2 {
+.testimonial-card-layout2 {
   display: flex;
   /* Flexbox düzeni */
   flex-direction: row;
@@ -436,7 +437,7 @@
   /* Esnemez */
 }
 
-.card h3 {
+.testimonial-card h3 {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -444,14 +445,14 @@
   margin-bottom: 4px;
 }
 
-.card p {
+.testimonial-card p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: #1d1d1d;
   line-height: 150%;
 }
 
-.card::before {
+.testimonial-card::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -470,7 +471,7 @@
 }
 
 /* Icon / Double Quotes */
-.icon-quotes {
+.testimonial-icon-quotes {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -480,14 +481,14 @@
 }
 
 /* Alt bilgi stili */
-.card-footer {
+.testimonial-card-footer {
   margin-top: auto;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.text-subtitle {
+.testimonial-text-subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -495,7 +496,7 @@
 }
 
 /* Yeni Buton */
-.card-button {
+.testimonial-card-button {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -535,16 +536,16 @@
 }
 
 /* Hover efekti */
-.card-button:hover {
+.testimonial-card-button:hover {
   background-color: #f1f1f1;
 }
 
 /* Tıklama efekti */
-.card-button:active {
+.testimonial-card-button:active {
   background-color: #e0e0e0;
 }
 
-.card-button-left {
+.testimonial-card-button-left {
   position: absolute;
   top: 50%;
   /* Dikeyde ortalama */
@@ -564,7 +565,7 @@
   z-index: 10;
 }
 
-.card-button-right {
+.testimonial-card-button-right {
   position: absolute;
   top: 50%;
   /* Dikeyde ortalama */
@@ -585,17 +586,17 @@
 }
 
 /* Hover ve aktif durumlar */
-.card-button-left:hover,
-.card-button-right:hover {
+.testimonial-card-button-left:hover,
+.testimonial-card-button-right:hover {
   background-color: #f1f1f1;
 }
 
-.card-button-left:active,
-.card-button-right:active {
+.testimonial-card-button-left:active,
+.testimonial-card-button-right:active {
   background-color: #e0e0e0;
 }
 
-.fixed-layout {
+.testimonial-fixed-layout {
   overflow-y: auto;
   /* Dikey kaydırmayı etkinleştirir */
   scrollbar-gutter: stable;
@@ -604,7 +605,7 @@
   /* Scrollbar'ın çalışacağı alan */
 }
 
-.slider-wrapper {
+.testimonial-slider-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -612,7 +613,7 @@
   margin: 0 auto;
 }
 
-.slider {
+.testimonial-slider {
   display: flex;
   gap: 16px;
   /* Kartlar arası boşluk */
@@ -622,13 +623,13 @@
   scroll-behavior: smooth;
 }
 
-.slider-container {
+.testimonial-slider-container {
   overflow-x: auto;
   width: 100%;
   position: relative;
 }
 
-.slider-card {
+.testimonial-slider-card {
   flex: 0 0 300px;
   /* Kart genişliği */
   background: white;
@@ -638,17 +639,17 @@
   /* Hover animasyonu */
 }
 
-.slider-card:hover {
+.testimonial-slider-card:hover {
   transform: scale(1.05);
   /* Kart üzerine gelince büyütme */
 }
 
-.slider-content {
+.testimonial-slider-content {
   display: flex;
   transition: transform 0.5s ease;
 }
 
-.slider-item {
+.testimonial-slider-item {
   min-width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
