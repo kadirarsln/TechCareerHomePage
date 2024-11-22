@@ -46,7 +46,9 @@ const CardList = () => {
     return (
         <div className="cardlist-container">
             <div className="cardlist-card-list-inner">
-                <h2>Eğitimler</h2>
+                <div className="card-list-header">
+                    <h2>Eğitimler</h2>
+                </div>
                 <div className="cardlist-card-list">
                     {courses.map((course, index) => (
                         <EducationCard key={index} {...course} />

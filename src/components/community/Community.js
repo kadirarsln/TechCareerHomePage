@@ -2,8 +2,8 @@ import React from 'react'
 import './Community.css'
 import communityImage from '../images/Group.png';
 import communityImage2 from '../images/Group2.png';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import StackCommunity from '@mui/material/Stack';
+import ButtonCommunity from '@mui/material/Button';
 
 function Community() {
     return (
@@ -14,8 +14,8 @@ function Community() {
                 <h1 className='community-communityTitle'>Komünite</h1>
                 <p className='community-communityText'>Teknoloji Komünitesi ile hayalindeki işi bulabilir, kendini geliştirecek eğitimlere katılabilir ve teknoloji uzmanlarıyla tanışabilirsin!</p>
 
-                <Stack spacing={2} direction="row" sx={{ marginTop: "10px" }}>
-                    <Button
+                <StackCommunity spacing={2} direction="row" sx={{ marginTop: "10px" }}>
+                    <ButtonCommunity
                         variant="contained"
                         sx={{
                             backgroundColor: "#00B666",
@@ -27,8 +27,8 @@ function Community() {
                         onClick={() => window.open('https://www.techcareer.net/community', '_blank')}
                     >
                         Keşfet
-                    </Button>
-                </Stack>
+                    </ButtonCommunity>
+                </StackCommunity>
             </div>
 
             <img src={communityImage2} alt="Community" className='community-img2' />

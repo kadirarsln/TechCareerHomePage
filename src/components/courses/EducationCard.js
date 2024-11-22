@@ -48,7 +48,7 @@ const EducationCard = ({ title, description, tags, level, time, certificate, ins
 
                 {/* Başlık ve Açıklama */}
                 <h3 className="education-title-h3">{title}</h3>
-                <p>{description}</p>
+                <div className="education-description"><p>{description}</p></div>
                 <div className="education-card-container">
                     {/* Çizgi */}
                     <hr className="education-card-divider" />

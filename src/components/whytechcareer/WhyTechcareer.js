@@ -32,7 +32,7 @@ const CardsSection = () => {
     return (
         <section className="whytech-cards-section">
             <h2 className="whytech-section-title">
-                Neden Tech<span className="whytech-highlight">career</span>.net?
+                Neden Tech<span className="highlight">career</span>.net?
             </h2>
             <div className="whytech-cards-container">
                 {cardsData.map((card) => (

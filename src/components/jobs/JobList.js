@@ -35,7 +35,8 @@ const JobList = () => {
     return (
         <div className="jobList-container">
             <div className="job-list-inner">
-                <h2>Güncel İş İlanları</h2>
+                <div className="job-list-header">
+                    <h2>Güncel İş İlanları</h2> </div>
                 <div className="job-list">
                     {jobs.map((job, index) => (
                         <JobCard key={index} {...job} />

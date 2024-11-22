@@ -6,7 +6,7 @@ const JobCard = ({ title, company, location, workHours, workModel, logo, view })
         <div className="jobCard-job-card">
             <div className="jobCard-job-card-header">
                 <h3 className="job-title">{title}</h3>
-                <button className="bookmark-button"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button className="jobCard-bookmark-button"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.333252 17.3332V2.51836C0.333252 2.0091 0.519918 1.57329 0.893252 1.21095C1.26658 0.848603 1.71484 0.667121 2.23801 0.666504H11.7618C12.2856 0.666504 12.7342 0.847985 13.1075 1.21095C13.4809 1.57391 13.6672 2.00971 13.6666 2.51836V17.3332L6.99992 14.5554L0.333252 17.3332ZM2.23801 14.5091L6.99992 12.5184L11.7618 14.5091V2.51836H2.23801V14.5091Z" fill="#293349" />
                 </svg>
                 </button>

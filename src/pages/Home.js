@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+/* import Footer from '../components/footer/Footer' */
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import JobList from "../components/jobs/JobList";
@@ -10,19 +9,20 @@ import Community from '../components/community/Community';
 import CommunityNelerYaptik from '../components/communityNelerYaptik/CommunityNelerYaptik';
 import Testimonials from '../components/testimonials/Testimonials';
 import WhyTechcareer from "../components/whytechcareer/WhyTechcareer";
+/* import Blog from "../components/blog/Blog" */
 
 function Home() {
 	return (
 		<>
-			<div>
-				<Header />
-			</div>
 			<div>
 				<JobList />
 			</div>
 			<div>
 				<CardList />
 			</div>
+			{/* <div>
+				<Blog />
+			</div> */}
 			<div>
 				<TeknikSozluk />
 			</div >
@@ -38,9 +38,10 @@ function Home() {
 			<div>
 				<WhyTechcareer />
 			</div>
-			<div>
+
+			{/* <div>
 				<Footer />
-			</div>
+			</div> */}
 
 		</>
 	)
