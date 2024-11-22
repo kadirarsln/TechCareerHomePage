@@ -1,18 +1,17 @@
 import React from 'react'
-
-import PrimarySearchAppBar from "../components/Navbar";
-import EventsSlider from "../components/EventsSlider";
-import CardContainer from "../components/CardContainer";
+import PrimarySearchAppBar from "../components/header/Navbar";
+import EventsSlider from "../components/events/EventsSlider";
+import CardContainer from "../components/events/CardContainer";
 import MiniSlider from "../components/MiniSlider";
 import JobList from "../components/jobs/JobList";
 import CardList from "../components/courses/CardList";
+import Blog from "../components/blog/Blog";
 import TeknikSozluk from '../components/teknikSozluk/TeknikSozluk';
 import Community from '../components/community/Community';
 import CommunityNelerYaptik from '../components/communityNelerYaptik/CommunityNelerYaptik';
 import Testimonials from '../components/testimonials/Testimonials';
 import WhyTechcareer from "../components/whytechcareer/WhyTechcareer";
-/* import Blog from "../components/blog/Blog" */
-/* import Footer from '../components/footer/Footer' */
+import Footer from "../components/footer/Footer";
 
 function Home() {
 	return (
@@ -23,7 +22,6 @@ function Home() {
 			<div>
 				<EventsSlider />
 			</div>
-
 			<div
 				className="home-section"
 				style={{
@@ -53,9 +51,9 @@ function Home() {
 			<div>
 				<CardList />
 			</div>
-			{/* <div>
+			<div>
 				<Blog />
-			</div> */}
+			</div>
 			<div>
 				<TeknikSozluk />
 			</div >
@@ -71,11 +69,9 @@ function Home() {
 			<div>
 				<WhyTechcareer />
 			</div>
-
-			{/* <div>
+			<div>
 				<Footer />
-			</div> */}
-
+			</div>
 		</div>
 	)
 }

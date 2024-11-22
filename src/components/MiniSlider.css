@@ -18,7 +18,8 @@
 /* Remove default arrows */
 .slick-prev:before,
 .slick-next:before {
-  content: ''; /* Hides default arrows */
+  content: '';
+  /* Hides default arrows */
 }
 
 /* Controls section, centered buttons */
@@ -42,7 +43,8 @@ button {
 /* Mobile responsiveness */
 @media (max-width: 1024px) {
   .container {
-    padding-left: 20px; /* Reduce padding on tablets */
+    padding-left: 20px;
+    /* Reduce padding on tablets */
     padding-right: 20px;
   }
 
@@ -51,7 +53,7 @@ button {
     height: 35px;
     width: 35px;
   }
-  
+
   /* Center controls and add some spacing for tablets */
   .controls {
     margin-top: 20px;
@@ -67,7 +69,8 @@ button {
 /* Mobile screen adjustments */
 @media (max-width: 768px) {
   .container {
-    padding-left: 10px; /* Even smaller padding for mobile */
+    padding-left: 10px;
+    /* Even smaller padding for mobile */
     padding-right: 10px;
   }
 
